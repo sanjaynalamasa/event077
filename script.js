@@ -141,7 +141,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const formData = {
             user_name: registrationForm.user_name.value,
             user_email: registrationForm.user_email.value,
-            event_name: registrationForm.event_name.value
+            event_name: registrationForm.event_name.value,
+           
         };
 
         fetch('http://localhost:5000/register', {
@@ -171,3 +172,18 @@ function openRegistrationForm(eventTitle) {
     document.getElementById("event_name").value = eventTitle;
     document.getElementById("registration-form-container").style.display = "flex";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

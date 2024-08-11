@@ -85,6 +85,7 @@ const registrationSchema = new mongoose.Schema({
     event_name: String,
     user_name: String,
     user_email: String,
+   
 });
 
 const Registration = mongoose.model('Registration', registrationSchema);
@@ -100,3 +101,13 @@ app.post('/register', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
